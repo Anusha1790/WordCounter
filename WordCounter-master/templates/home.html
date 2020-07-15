@@ -1,0 +1,55 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+
+  <div class="header">
+    <a href="#default" class="logo">Word Counter</a>
+    <div class="header-right">
+       <a class="active" href="#home">Home</a>
+      </div> 
+  </div>
+
+  <div style="padding-left:20px">
+
+<!-- <div style="padding-top: 100px;"> -->
+
+</div>
+<div  style="padding-bottom:100px;">
+
+  <h1 class="a " >WORD COUNTER WEB PAGE</h1>
+
+
+    <form class="example"   action="{% url 'count' %}" style="padding-left:100px;" >
+
+
+
+     <input   type="text" placeholder="Enter your text here..." name="fulltext">
+
+
+    <button type="submit"  ">Count</button>
+
+  </form>
+  <br>
+</div>
+
+
+
+<div style="border-style: solid; " >
+  <h6>WHAT IS A WORD COUNTER?</h6>
+  A word count is a numerical count of how many words a document contains. This page counts the number of words in the given text and and lists the words in descending order of number of occurence of the words.
+
+</div>
+
+
+  </body>
+</html>
